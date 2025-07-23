@@ -1,0 +1,59 @@
+    body {
+      margin: 0;
+      background: #2f3640;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(6, 150px);
+      grid-template-rows: repeat(4, 150px);
+      padding: 15px;
+    }
+
+    .cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    }
+
+    .blue {
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    }
+
+    .main {
+      grid-column: span 3;
+      grid-row: span 2;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    }
+
+    .diamond {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transform: rotate(45deg);
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .diamond span {
+      transform: rotate(-45deg);
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+    }
+    p{
+        transform: rotate(-45deg);
+    }
